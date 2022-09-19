@@ -1,6 +1,4 @@
-from glob import glob
 from os import chdir
-from time import time
 chdir('./deep_rl')
 
 
@@ -8,9 +6,8 @@ from math import inf, log, sqrt
 from random import choice, normalvariate, uniform
 import numpy as np
 import matplotlib.pyplot as plt
-from numba import jit
 # hyper-parameters
-num_runs = 200
+num_runs = 2000
 num_bandits = 15
 num_steps = 1000
 mu = np.linspace(1,15,15)
